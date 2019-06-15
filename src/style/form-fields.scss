@@ -26,12 +26,15 @@
         width: 243px;
         border-radius: 20px;
         background-color: #00CB79;
-
         font-size: 16px;
         color: white;
-
         &:focus {
             outline: none;
         }
+    }
+
+    &__gray-button {
+        background: #999;
+        width: 137px;
     }
 }
