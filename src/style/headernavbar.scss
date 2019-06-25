@@ -23,7 +23,7 @@
 
         color: #333;
         font-size: 16px;
-
+    
         & > * {
             grid-row: s/e;
         }
@@ -57,4 +57,5 @@
     & > * {
         grid-row: s/e;
     }
+
 }

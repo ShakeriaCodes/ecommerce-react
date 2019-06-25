@@ -7,9 +7,10 @@ import { FormInput, FormButton, LongGrayButton } from '../formFields';
 import history from '../../history';
 
 class AccountInformationForm extends Component {
+
     constructor() {
         super()
-
+        
         this.state = {
             showPasswords: false
         }
@@ -17,7 +18,7 @@ class AccountInformationForm extends Component {
 
     render() {
         const { className, handleSubmit } = this.props;
-
+    
         return (
             <form onSubmit={handleSubmit} className={`${className} account-information-form`}>
                 <Field className='account-information-form__name'
@@ -32,6 +33,7 @@ class AccountInformationForm extends Component {
                 placeholder='Email'
                 name='email'
                 component={FormInput}/>
+
                 <Field className='account-information-form__street-address'
                 type='address'
                 title='Street Address'
@@ -94,7 +96,7 @@ class AccountInformationForm extends Component {
                             short={true}
                             component={FormButton}/>
                         ]
-
+          
                     :
                         <Field className='account-information-form__change-password'
                         onClick={() => this.setState({ showPasswords: true })}

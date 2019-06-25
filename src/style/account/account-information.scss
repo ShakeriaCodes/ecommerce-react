@@ -1,8 +1,11 @@
 .account-information {
     grid-row: content-s/content-e;
     grid-column: s/e;
+
     // &__page-title {
+
     // }
+
     &__form {
         display: grid;
         grid-template-rows: [name-s street-address-s] 64px [name-e street-address-e email-s city-s] 64px [email-e city-e state-s zipcode-s] 64px [zipcode-e state-e change-password-s current-s] 64px [change-password-e current-e new-s] 64px [new-e confirm-s] 64px [confirm-e] minmax(20px, 81px) [line-s] 26px [line-e buttons-s] 38px [buttons-e];
@@ -10,7 +13,9 @@
         grid-row-gap: 15px;
     }
 }
+
 .account-information-form {
+
     &__name {
         grid-column: s/m;
         grid-row: name-s/name-e;
@@ -34,6 +39,7 @@
         grid-row: zipcode-s/zipcode-e;
         transform: translateX(226px);
     }
+
     &__state,
     &__zipcode {
         grid-column: m/e;
@@ -63,7 +69,7 @@
     &__confirm {
         transform: translateY(-25px);
     }
-    
+
     &__line {
         grid-row: line-s/line-e;
         grid-column: s/e;
@@ -82,4 +88,5 @@
 
     }
 
-} 
+
+}

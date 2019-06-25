@@ -5,7 +5,6 @@ import headerNavbar from './headernavbarReducer';
 import user from './userReducer';
 import shop from './shopReducer';
 
-
 const rootReducer = combineReducers({
   form,
   headerNavbar,
