@@ -7,7 +7,7 @@ import {
 
 const INITIAL_STATE = {
     categories: [],
-    selectedCategoryID: 0,
+    
     productsSelected: [],
     products: [],
     filteredProducts: []
@@ -16,10 +16,11 @@ const INITIAL_STATE = {
 export default function(state = INITIAL_STATE, action) {
     switch (action.type) {
         case SET_SHOP_CATEGORIES:
-            const categories  = action.payload;
+        const categories = action.payload;
+        
             return {
                 ...state,
-                categories: action.payload.categories
+                categories
             }
         case SET_SHOP_PRODUCTS:
             return {

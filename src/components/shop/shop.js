@@ -16,10 +16,11 @@ class Shop extends Component {
         ]
         this.props.setHeaderLinks(headerLinks);
         this.props.fetchShopCategories();
-
+         
         // filter products with links
         this.props.fetchShopProducts();
     }
+
     shouldComponentUpdate(nextProps) {
         if(this.props != nextProps) {
             this.props.setNavbarLinks(nextProps.categories, (_id) => this.props.filterProductsWithCategoryId(_id));

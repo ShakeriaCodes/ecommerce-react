@@ -22,7 +22,7 @@ export default function(state = INITIAL_STATE, action) {
             return {
                 ...state,
                 navbarLinks: links,
-                onClick: onClick
+                onClick: onClick 
             }
         case CHANGE_NAVBAR_ACTIVE: 
             const navbarLinks = state.navbarLinks.map(link => {
